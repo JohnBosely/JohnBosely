@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRAVEL2</title>
+<style>
+body {
+margin: 0;
+overflow: hidden;
+}
+.overlay {
+    margin-left: 90px;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+text-align: center;
+color: brown;
+z-index: 1; /*places the text on the video*/
+}
+
+.overlay p {
+font-size: 6em;
+margin-left:100px;
+}
+
+nav {
+margin-left: -250px;
+margin-top: -280px;
+}
+
+nav a {
+color: brown;
+text-decoration: none;
+margin: 0 10px;
+text-align: center;
+}
+
+nav a:hover {
+color: wheat;
+}
+
+.dest, .trav, .itine, .abo, .blog {
+margin-right: 40px;
+font-weight: 900;
+}
+
+.sign {
+padding: 10px 35px;
+border: 1px solid brown;
+margin-right: -700px;
+border-radius: 3px;
+position: absolute;
+top: -290px;
+}
+
+.sign:hover {
+opacity: 0.7;
+}
+video {
+width: 100%;
+height: auto;
+position: absolute;
+top: 0;
+left: 0;
+z-index: 0;/* place the video behind other elements */
+}
+
+
+.cards {
+width: 300px;
+border: 1px solid black;
+border-radius: 8px;
+overflow: hidden;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+background-color: brown;
+margin: 20px;
+position: absolute;
+z-index: -2;
+}
+
+.card-content {
+padding: 20px;
+}
+
+.card-title {
+font-size: 1.5rem;
+margin-bottom: 10px;
+}
+
+.card.description {
+color: #555;
+}
+</style>
+
+</head>
+<body>
+    <div class="overlay">
+        <nav>
+        <a class="dest" href="#destinations">Destinations</a>
+        <a class="trav" href="#travel">Travel tips</a>
+        <a class="itine" href="#itineraries">Itineraries</a>
+        <a class="abo" href="#about">About</a>
+        <a class="blog" href="#blog">Blog</a>
+        <a class="sign" href="#signin">Sign in</a>
+        </nav>
+     <p style="position: absolute; margin-left: -150px; color: brown;">TRAVEL AGENCY</p>
+    </div>
+    <video autoplay loop muted>
+        <source src="../videos/tra10.mp4" type="video/mp4">
+    </video>
+
+    <div id="travel-tips">
+        <h1>TIPS</h1>
+        <div class="cards">
+            <div class="card-content">
+            <h2 class="card-title">card title</h2>
+            <p class="card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+                laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate 
+                velit esse cillum dolore eu fugiat nulla pariatur</p>
+            </div>
+        </div>
+        </div>
+</body>
+</html>
